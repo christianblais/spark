@@ -1,0 +1,117 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html { height: 100%; }
+
+body {
+  background-image: URL(../images/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card__side--1, .card__side--2, .card__side--3, .card__side--4, .card__side--5, .card__side--6 {
+  position: absolute;
+  width: 70%;
+  height: 90%;
+  z-index: 100;
+  left: 50%;
+  top: 50%;
+}
+
+.card__side--1 { transform: translate(-50%, -50%) rotate(000deg); }
+.card__side--2 { transform: translate(-50%, -50%) rotate(060deg); }
+.card__side--3 { transform: translate(-50%, -50%) rotate(120deg); }
+.card__side--4 { transform: translate(-50%, -50%) rotate(180deg); }
+.card__side--5 { transform: translate(-50%, -50%) rotate(240deg); }
+.card__side--6 { transform: translate(-50%, -50%) rotate(300deg); }
+
+.card__side__wall { border-top: 3px solid #000; }
+
+.card__side__damage {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  margin-left: -10px;
+  background: #000000;
+  color: #ffffff;
+  border-radius: 10px;
+  left: 50%;
+}
+
+.card.card--empty {
+  opacity: 0.3;
+}
+
+.card__side--1 .card__side__damage { transform: rotate(-000deg); }
+.card__side--2 .card__side__damage { transform: rotate(-060deg); }
+.card__side--3 .card__side__damage { transform: rotate(-120deg); }
+.card__side--4 .card__side__damage { transform: rotate(-180deg); }
+.card__side--5 .card__side__damage { transform: rotate(-240deg); }
+.card__side--6 .card__side__damage { transform: rotate(-300deg); }
+
+.card {
+  position: relative;
+  margin-left: 18px;
+  background-color: #4da9ff;
+  text-align: center;
+}
+
+.card, .card::before, .card::after {
+  width: 67px;
+  height: 116px; /* 2*(width/(2*Math.tan(Math.PI/6))) */
+  border-radius: 20%/5%;
+}
+
+.card::before, .card::after {
+  background-color: inherit;
+  content: "";
+  position: absolute;
+  left: 0;
+}
+
+.card::before {
+  transform: rotate(-60deg);
+}
+
+.card::after {
+  transform: rotate(+60deg);
+}
+
+.card.card--planet {
+  background-color: #0000ff;
+}
+
+.card.card--spaceship {
+  background-color: #00ff00;
+}
+
+.card:hover {
+  opacity: 1;
+  background-color: #ff0000;
+  cursor: pointer;
+}
+
+.map {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.map__tile {
+  position: absolute;
+}
+
+.hand {
+  position: absolute;
+  bottom: 50px;
+  left: 50px;
+}
+
+.hand .card {
+  float: left;
+  margin-right: 50px;
+}
