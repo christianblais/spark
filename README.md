@@ -23,26 +23,32 @@ The game ends when all star(s) have been claimed, at which time players will cou
 
 
 ## Setup
-1. Pick a map (see appendix section of this booklet - advanced players may choose to create their own map)
+1. Pick a map (see appendix section of this booklet - advanced players may choose to create their own map).
 - Place the planets on the playing field in accordance with the selected map configuration (from now on we will refer to this setting as, the "galaxy"). Any unused planet can be removed from the game.
 - Shuffle the spaceship cards (supply stations do not count as spaceships!) and place them face down next to the galaxy. 
 - Players determine the order in which they will play. The player who most recently went in space starts... otherwise we assume you are smart enough to figure out a way to select who goes first... if not the player on your left is the first player.
-- The first and second player draw one and two spaceship cards respectively. All other players pick 3 spaceship cards.
+- The first and second player draw one and two spaceship cards respectively. All other players draw 3 spaceship cards.
 
 ## The Mechanics
 Planets, spaceships and supply stations have a set number of resistance points attributed to them (that is, how much damage they can sustain before being conquered). The number of resistance points is clearly identified in the #$^#% symbol on each card. 
 
 Spaceships deal damage in one or more directions. The strength and direction of the damage dealt is displayed on the cards in the #%^$%&^ symbols.
 
+Most planets are equipped with forcefields to protect them from invaders. Forcefields block all damage dealt in their direction, and can be identified on the border of planet cards with the following symbol %^$%^ 
+
 A planet or spaceship is claimed when it receives damage greater or equal to its resistance points. 
 
-Most planets are equipped with forcefields to protect them from invaders. Forcefields block all damage dealt in their direction, and can be identified on the border of planet cards with the following symbol %^$%^ 
+Throughout the game, players will accumulate cards. They can either be;
+
+1. Spaceships and supply stations drawn from their respective draw piles, placed in the player's hand,
+- Claimed planets and stars, placed next to the player in the scoring pile,
+- Claimed spaceships, placed next to the player in the salvage yard.
 
 For those of you who do better with visual support - you may refer to the illustrative examples in the right margin of this page.
 
 
 ## Turns
-A player's turn is played in 5 steps. Once a turn is completed, the player to your left begins his.
+A player's turn is played in 6 steps. Once a turn is completed, the player to his left begins his.
 
 1. Deployment
 2. Special powers
@@ -59,40 +65,56 @@ During this step, the player must deploy a spaceship or supply station from his 
 
 Some spaceships have special powers, and they activate immediately after being deployed.
 
-- %$^#$ : You may discard a spaceship or supply station from your hand
-- $%^$%^: You may draw a spaceship
-- %^%$^$: Rotate a planet into desired position
-- $%^$% : Rotate a spaceship or supply station into desired position
+- %$^#$ : You may discard a spaceship or supply station from your hand.
+- $%^$%^: You may draw a spaceship from the spaceship draw pile into your hand.
+- %^%$^$: Rotate a planet into desired position.
+- $%^$% : Rotate a spaceship or supply station into desired position.
 
 
 ### 3. Damage
 
-All spaceships and supply stations deal their damage simultaneously. The player may choose to discard claimed spaceship) to deal additional damage - for every two salvage discarded, deal 1 additional damage to a target of your choice. Salvage discarded in this way are placed back into the spaceship discard pile. 
+All spaceships and supply stations deal their damage simultaneously. 
+
+The player may choose to remove spaceships from his salvage yard - for every two spaceships removed, he may deal 1 additional damage to a target of his choice. Spaceships removed in this way are placed into the spaceship discard pile. 
 
 
 ### 4. Conquer
 
-Claim all planets and spaceships that sustain damage greater or equal to their resistance points. 
+Planets and stars are claimed when;
 
-* Claimed planets are placed next to you and set aside until the scoring phase. 
-* Claimed spaceships are placed face up next to you and can be used later on during your turn to deal additional damage (see Damage section)
+- They sustain damage greater or equal to their resistance points.
 
-Supply stations that sustain damage greater or equal to their reisitance points are destroyed - they are placed back into the supply station pile.
+Spaceships and supply stations are claimed when;
 
+- They sustain damage greater or equal to their resistance points,
+- They are part of a group of spaceships and supply stations that are not connected to any planet or star.
+
+When they are claimed;
+
+* Planets are placed in the player's scoring pile,
+* Spaceships are placed in the player's salvage yard,
+* Supply stations are destroyed - they are placed back into the supply station pile.
 
 ### 5. Play Again
 
-A player may choose to play steps 1 to 4 a second time in his turn. If he does, he draws a supply station at the end.
-
-This can be useful as it will allow the player to deploy two vessels in his turn.
-The drawback, however, is that the player will draw a supply station at the end of his turn... and supply stations are very weak.
-
+A player may choose to play steps 1 through 4 ("action phase") up to three times in his turn - assuming he has enough spaceship cards in his hand. 
 
 ### 6. Draw and Discard
 
-At the end of you turn, if you have no cards remaining in your hand, draw 3 cards from the spaceship draw pile.
-Discard all claimed spaceship cards in excess of 2.
+For every action phase completed past the first, the player draws a supply station.
+
+The player may choose to remove spaceships from his salvage yard - for every three spaceships removed, he may discard a supply station from his hand. Supply stations discarded in this way are placed back into the supply station draw pile. 
+
+At the end of his turn, if the player has no cards remaining in his hand, he draws 3 cards from the spaceship draw pile. If there are no more cards, shuffle the spaceship discard pile and use it as the new draw pile. 
+
+The player removes all spaceships from his salvage yard in excess of 2. Spaceships removed in this way are placed into the spaceship discard pile. 
 
 
-## Special powers
+## Game Variants
 
+### Face-off (players 2, 4 or 6)
+
+1. Players are split in 2 teams, each with the same number of players in each. Each team will be assigned a colour (blue and orange)
+- Randomly build the galaxy using all the planets and stars available. For a shorter game, you may use less but make sure that each colour uses the exact same planets and stars
+- Players are placed around the table so that no two player from the same team will play one just after the other
+- A player may never claim a planet or star of the opposing team's colour. Planets or stars that would normally be claimed in this way remain in the galaxy until such time as they are claimed by a player of their own colour.
