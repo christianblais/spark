@@ -110,6 +110,17 @@ At the end of his turn, if the player has no cards remaining in his hand, he dra
 The player removes all spaceships from his salvage yard in excess of 2. Spaceships removed in this way are placed into the spaceship discard pile. 
 
 
+### Special Rules
+In the unlikely event that (and yes you are probably one of those players that actively trying to test how infallible the game is) there are no longer spaceships in the draw or discard pile, all spaceships left in the galaxy and each players' salvage yard are placed back into the spaceship discard pile. Shuffle it and use it as the new spaceship draw pile. All supply stations are placed back into the suplly stations draw pile.
+
+## End of the Game
+
+### When does the Game End
+The game ends end when all stars in the galaxy have been claimed. For those of you expecting something more complex, we apologize.
+
+### Scoring
+Each conquered planet is worth 1 point.
+
 ## Game Variants
 
 ### Face-off (players 2, 4 or 6)
@@ -118,3 +129,4 @@ The player removes all spaceships from his salvage yard in excess of 2. Spaceshi
 - Randomly build the galaxy using all the planets and stars available. For a shorter game, you may use less but make sure that each colour uses the exact same planets and stars
 - Players are placed around the table so that no two player from the same team will play one just after the other
 - A player may never claim a planet or star of the opposing team's colour. Planets or stars that would normally be claimed in this way remain in the galaxy until such time as they are claimed by a player of their own colour.
+- 
