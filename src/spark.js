@@ -38,18 +38,41 @@ var Tile = React.createClass({
     }
   },
 
-  getCard: function() {
-    var card = this.props.card;
+  getInitialState: function() {
+    return {
+      selectedCard: null
+    }
+  },
 
-    if (card === null)
-      return <div className="card card--empty" />
-    else
-      return <Card {...card} />
+  getCard: function() {
+    if (this.props.card === null) {
+      if (this.state.selectedCard === null) {
+        return <div className="card card--empty" onMouseEnter={this.handleMouseEnter} />
+      } else {
+        return(
+          <div className="card-previewer" onMouseLeave={this.handleMouseLeave}>
+            <Card {...this.state.selectedCard} />
+          </div>
+        );
+      }
+    } else {
+      return <Card {...this.props.card} />
+    }
   },
 
   handleClick: function(event) {
     if (this.props.onClick !== undefined)
       this.props.onClick(this.props.position, this.props.card)
+
+    this.setState({selectedCard: null})
+  },
+
+  handleMouseEnter: function(event) {
+    this.setState({selectedCard: this.props.selectedCard})
+  },
+
+  handleMouseLeave: function(event) {
+    this.setState({selectedCard: null})
   },
 
   render: function() {
@@ -121,7 +144,11 @@ var Map = React.createClass({
     return(
       <div className="map">
         {Object.keys(this.props.tiles).map(function(position, index) {
-          return <Tile key={index} position={position} card={this.props.tiles[position]} onClick={this.props.onClick} />
+          return <Tile key={index}
+            position={position}
+            card={this.props.tiles[position]}
+            selectedCard={this.props.card}
+            onClick={this.props.onClick} />
         }, this)}
       </div>
     );
@@ -261,7 +288,7 @@ var Spark = React.createClass({
     console.log('render')
     return(
       <div className="spark__container">
-        <Map ref="map" tiles={this.state.tiles} onClick={this.mapClickHandler} />
+        <Map ref="map" tiles={this.state.tiles} card={this.state.card} onClick={this.mapClickHandler} />
         <Hand ref="hand" cards={this.props.deck} onClick={this.handClickHandler} />
       </div>
     );

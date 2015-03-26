@@ -38,18 +38,41 @@ var Tile = React.createClass({displayName: "Tile",
     }
   },
 
-  getCard: function() {
-    var card = this.props.card;
+  getInitialState: function() {
+    return {
+      selectedCard: null
+    }
+  },
 
-    if (card === null)
-      return React.createElement("div", {className: "card card--empty"})
-    else
-      return React.createElement(Card, React.__spread({},  card))
+  getCard: function() {
+    if (this.props.card === null) {
+      if (this.state.selectedCard === null) {
+        return React.createElement("div", {className: "card card--empty", onMouseEnter: this.handleMouseEnter})
+      } else {
+        return(
+          React.createElement("div", {className: "card-previewer", onMouseLeave: this.handleMouseLeave}, 
+            React.createElement(Card, React.__spread({},  this.state.selectedCard))
+          )
+        );
+      }
+    } else {
+      return React.createElement(Card, React.__spread({},  this.props.card))
+    }
   },
 
   handleClick: function(event) {
     if (this.props.onClick !== undefined)
       this.props.onClick(this.props.position, this.props.card)
+
+    this.setState({selectedCard: null})
+  },
+
+  handleMouseEnter: function(event) {
+    this.setState({selectedCard: this.props.selectedCard})
+  },
+
+  handleMouseLeave: function(event) {
+    this.setState({selectedCard: null})
   },
 
   render: function() {
@@ -121,7 +144,11 @@ var Map = React.createClass({displayName: "Map",
     return(
       React.createElement("div", {className: "map"}, 
         Object.keys(this.props.tiles).map(function(position, index) {
-          return React.createElement(Tile, {key: index, position: position, card: this.props.tiles[position], onClick: this.props.onClick})
+          return React.createElement(Tile, {key: index, 
+            position: position, 
+            card: this.props.tiles[position], 
+            selectedCard: this.props.card, 
+            onClick: this.props.onClick})
         }, this)
       )
     );
@@ -261,7 +288,7 @@ var Spark = React.createClass({displayName: "Spark",
     console.log('render')
     return(
       React.createElement("div", {className: "spark__container"}, 
-        React.createElement(Map, {ref: "map", tiles: this.state.tiles, onClick: this.mapClickHandler}), 
+        React.createElement(Map, {ref: "map", tiles: this.state.tiles, card: this.state.card, onClick: this.mapClickHandler}), 
         React.createElement(Hand, {ref: "hand", cards: this.props.deck, onClick: this.handClickHandler})
       )
     );
