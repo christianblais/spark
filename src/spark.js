@@ -45,6 +45,17 @@ var Tile = React.createClass({
   },
 
   getCard: function() {
+    card = this.props.card;
+
+    if (card === null) {
+      card = this.state.selectedCard;
+
+      if (card === null)
+        card = {type: 'empty'}
+      else
+        card.type = 'preview'
+    }
+
     if (this.props.card === null) {
       if (this.state.selectedCard === null) {
         return <div className="card card--empty" onMouseEnter={this.handleMouseEnter} />
