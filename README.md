@@ -19,7 +19,7 @@ This game is about war, and the only way to win is by claiming stars and planets
 
 
 ##Objectives
-The game ends when all star(s) have been claimed, at which time players will count the number of planets they have conquered - each conquered planet is worth 1 point, and some combinations may yield bonuses (see scoring section of this rule booklet)
+The game ends when all star(s) have been claimed, at which time players will count the number of planets they have conquered - each conquered planet is worth 1 point, each conquered star is worth 2 points. Some combinations may yield bonuses (see scoring section of this rule booklet)
 
 
 ## Setup
