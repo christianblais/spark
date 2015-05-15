@@ -24,26 +24,28 @@ The game ends when all star(s) have been claimed, at which time players will cou
 
 ## Setup
 1. Pick a map (see appendix section of this booklet - advanced players may choose to create their own map).
-- Place the planets on the playing field in accordance with the selected map configuration (from now on we will refer to this setting as, the "galaxy"). Any unused planet can be removed from the game.
-- Shuffle the spaceship cards (supply stations do not count as spaceships!) and place them face down next to the galaxy. 
+- Place planets on the playing field in accordance with the selected map configuration (from now on we will refer to this setting as, the "galaxy"). Any unused planet can be removed from the game.
+- Shuffle the spaceship cards and place them face down next to the galaxy. 
 - Players determine the order in which they will play. The player who most recently went in space starts... otherwise we assume you are smart enough to figure out a way to select who goes first... if not the player on your left is the first player.
 - The first player draws 1 spaceship card. The second player draws 2 spaceship cards. The third player draws 3 spaceship cards. And so on and so forth, up to 6 spaceship cards. 
-- Each player is randomly assigned a total of 2 quest cards. Each card allows players additional ways in which they can score additional points at the end of the game.
+- Each player is randomly assigned a total of 2 quest cards. Each card allows player to score additional points. Quest cards are placed faced down in front of each player and can only be looked at by their owner.
 
 ## The Mechanics
-Planets, spaceships and supply stations have a set number of resistance points attributed to them (that is, how much damage they can sustain before being conquered). The number of resistance points is clearly identified in the #$^#% symbol on each card. 
+Planets and spaceships have a set number of resistance points attributed to them (that is, how much damage they can sustain before being conquered). The number of resistance points is clearly identified in the #$^#% symbol on each card. 
 
 Spaceships deal damage in one or more directions. The strength and direction of the damage dealt is displayed on the cards in the #%^$%&^ symbols.
 
 Most planets are equipped with forcefields to protect them from invaders. Forcefields block all damage dealt in their direction, and can be identified on the border of planet cards with the following symbol %^$%^ 
 
-A planet or spaceship is claimed when it receives damage greater or equal to its resistance points. 
+A planet or spaceship is conquered when it receives damage greater or equal to its resistance points.
+
+Once played, players do not own spaceships. They deal their damage as indicated, regardless of who's turn it is. Planets, stars, and spaceships are conquered by whomever is currently the active player.
 
 Throughout the game, players will accumulate cards. They can either be;
 
-1. Spaceships drawn from the draw pile,
-- Claimed planets and stars, placed next to the player in the scoring pile,
-- Claimed spaceships, placed next to the player in the salvage yard.
+1. Spaceships drawn from the draw pile, placed in player's hand,
+* Claimed planets and stars, placed next to the player in the scoring pile,
+* Claimed spaceships, placed next to the player in the salvage yard.
 
 If at any time during his turn the player has no remaining cards in his hand, he draws 5 spaceship cards from the spaceship draw pile.
 
@@ -54,11 +56,11 @@ For those of you who do better with visual support - you may refer to the illust
 A player's turn is played in 6 steps. Once a turn is completed, the player to his left begins his.
 
 1. Deployment
-2. Special powers
-3. Damage
-4. Conquer
-5. Play Again
-6. Discard
+* Special powers
+* Damage
+* Conquer
+* Play Again
+* Discard
 
 ### 1. Deployment
 
@@ -125,15 +127,14 @@ The game ends end when all stars in the galaxy have been claimed. For those of y
 ### Scoring
 
 #### Conquered Stars and Planets
-Each conquered planet is worth 1 point.
-
-Each conquered star is worth 2 points.
+- Each conquered planet is worth 1 point.
+- Each conquered star is worth 2 points.
 
 
 #### Quest Cards
 Each player gains additional points based on the specifics of their quest cards. 
 
-1. Gain 1 point per Dwarf planet.
+* Gain.1 point per Dwarf planet.
 * Gain 1 point per Ring planet.
 * Gain 1 point per Habitable planet.
 * Gain 1 point per Gaseous planet.
